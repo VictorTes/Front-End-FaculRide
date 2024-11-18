@@ -62,12 +62,12 @@ a{
   
 }
 
-.bus{
+.building{
   position: absolute;
   z-index: +1;
   margin-top: 70vh;
   display: block;  
-  height: 250px;
+  height: 300px;
   animation: subirDescer 6s ease-in-out infinite;
 }
 
@@ -94,9 +94,8 @@ a{
 .nuvem2{
   position: fixed;
   z-index: -1;
-  margin-left: 80%;
   margin-top: 260px;
-  height: 200px;
+  width: 200%;
 }
 .nuvem3{
   position: fixed;
@@ -110,24 +109,19 @@ button:hover {
   transform: scale(1.05); 
 }
 
+
 @keyframes moverNuvens {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   50% {
-    transform: translateX(40px); 
+    transform: translateX(50vw);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
 }
 
-.nuvem1{
+.nuvem2 {
   animation: moverNuvens 10s linear infinite;
-}
-.nuvem2{
-  animation: moverNuvens 12s linear infinite;
-}
-.nuvem3{
-  animation: moverNuvens 14s linear infinite;
 }
