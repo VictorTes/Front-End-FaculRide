@@ -1,29 +1,23 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
 import nuvem from './imgs/nuvem.png';
-import bus from './imgs/bus.png';
-
+import island from './imgs/island.png'; 
 
 function App() {
-
   return (
     <>
       <img src={nuvem} className='nuvem1' alt="" />
       <img src={nuvem} className='nuvem3' alt="" />
       <div className="container-img">
-        <img src={bus} alt="Ônibus" className='bus' />
+        <img src={island} alt="Empresa" className='island' />
       </div>
       <form action="">
-        <div class="container">
-          <h1>Motorista</h1>
-          <p>Lorem ipson dolor si amet</p>
-          <button>Eu confirmo</button>
-          <a href="">Não, voltar  </a>
-          <img src={nuvem} className='nuvem2' alt="" />
-        </div>
+        <button className="confirm-button">Escolha seu perfil!</button>
+        <p className="function-text">Selecione aqui sua função no aplicativo</p>
+        <img src={nuvem} className='nuvem2' alt="" />
       </form>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
