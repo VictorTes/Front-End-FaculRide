@@ -41,6 +41,8 @@ button{
   font-size: 18px;
   border-radius: 10px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border: none;
 }
 
 
@@ -102,4 +104,30 @@ a{
   margin-left: 2%;
   margin-top: 250px;
   height: 80px;
+}
+button:hover {
+  background-color: #357ABD; 
+  transform: scale(1.05); 
+}
+
+@keyframes moverNuvens {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(40px); 
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.nuvem1{
+  animation: moverNuvens 10s linear infinite;
+}
+.nuvem2{
+  animation: moverNuvens 12s linear infinite;
+}
+.nuvem3{
+  animation: moverNuvens 14s linear infinite;
 }
