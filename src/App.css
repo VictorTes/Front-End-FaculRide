@@ -1,0 +1,105 @@
+body{
+  display: flex;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #58A1D6;
+}
+form{
+ text-align: left;  
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ width: 100vw;
+ height: 100vh;
+}
+
+.container{
+margin-top: 50vh;
+display: flex;
+height: 300px;
+width: 85vw;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+background-color: #FFFFFF;
+border-radius: 31px;
+box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+  color: #58A1D6;
+  font-weight: bold;
+}
+
+button{
+  background-color: #3E7FB4;
+  padding: 15px 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+a{
+  color: #58A1D6;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.container-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.bus{
+  position: absolute;
+  z-index: +1;
+  margin-top: 70vh;
+  display: block;  
+  height: 250px;
+  animation: subirDescer 6s ease-in-out infinite;
+}
+
+@keyframes subirDescer {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.nuvem1{
+  position: fixed;
+  z-index: -1;
+  margin-left: 50%;
+  margin-top: 45px;
+  height: 100px;
+}
+.nuvem2{
+  position: fixed;
+  z-index: -1;
+  margin-left: 80%;
+  margin-top: 260px;
+  height: 200px;
+}
+.nuvem3{
+  position: fixed;
+  z-index: -1;
+  margin-left: 2%;
+  margin-top: 250px;
+  height: 80px;
+}
