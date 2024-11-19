@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #87ceeb, #257797);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .island-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    animation: zoomApproach 7s ease-in forwards; 
+  }
+  
+  .ilha-flutuante {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    animation: flutuar 4s ease-in-out infinite; 
+  }
+  
+  .island-container img {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+  }
+  
+  .island-container img:nth-child(2) {
+    top: 50px;
+    left: -80px;
+    width: 120px;
+    animation: moverNuvem 30s linear infinite;
+  }
+  
+  .island-container img:nth-child(3) {
+    bottom: 20px;
+    right: -10px;
+    width: 100px;
+    animation: moverNuvem 80s linear infinite;
+  }
+  
+  .island-container img:nth-child(4) {
+    bottom: -400px;
+    left: -500px;
+    width: 600px;
+    opacity: 0.8;
+  }
+  
+  .island-container img:nth-child(5) {
+    bottom: -500px;
+    right: -350px;
+    width: 800px;
+    opacity: 1;
+  }
+
+  h1{
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    left: 25%;
+  }
+  
+  @keyframes flutuar {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes moverNuvem {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(800px);
+    }
+  }
+  
+  @keyframes zoomApproach {
+    0% {
+      transform: scale(1); 
+    }
+    100% {
+      transform: scale(4); 
+    }
+  }
+  
